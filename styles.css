@@ -5,13 +5,12 @@
 }
 
 body {
-  margin: 2em;
+  margin: 0;
   background: #fff5f5;
   font-family: "oxygen", sans-serif;
 }
 
-.container,
-nav {
+.container {
   margin: 1em auto;
 }
 
