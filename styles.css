@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 2em;
+  background: #fff5f5;
+}
+
 .container {
   margin: 1em auto;
 }
