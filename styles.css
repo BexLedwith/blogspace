@@ -9,6 +9,35 @@ body {
   background: #fff5f5;
 }
 
-.container {
+.container,
+nav {
   margin: 1em auto;
 }
+
+nav {
+  height: 30px;
+  top: 0;
+  background: #e4f6bc;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+#posts {
+  margin-top: 75px;
+}
+
+/**
+ Challenge:
+
+ Style it up!
+ 
+ * Add a short (~30px height) fixed navbar at the top with the text "BlogSpace". Remember to pad the top of your content so it doesn't get hidden behind the navbar.
+ * Add a font from Google Fonts.
+ * Any other styling you want to make it look nice!
+ 
+ */
