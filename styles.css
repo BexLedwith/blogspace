@@ -37,7 +37,7 @@ nav h3 {
 
 form {
   padding: 15px;
-  margin: 3em;
+  margin: 3em 2em 2em;
   display: flex;
   flex-direction: column;
   background: #c6b0cc;
