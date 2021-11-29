@@ -32,7 +32,24 @@ document.getElementById("new-post").addEventListener("submit", function (e) {
     title: postTitle,
     body: postBody,
   };
-  console.log(data);
+  /**
+   * Challenge: Send this off to the server!
+   *
+   * 1. BaseURL: https://apis.scrimba.com/jsonplaceholder/
+   * 2. Endpoint: /posts
+   * 3. method: ???
+   * 4. Request body: ??? (Remember to turn it into JSON)
+   * 5. Headers: ??? (Check the JSON Placeholder API docs or past casts for help)
+   */
+  fetch("https://apis.scrimba.com/jsonplaceholder/posts", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  })
+    .then((res) => res.json())
+    .then((data) => console.log(data));
 });
 
 /**
@@ -53,7 +70,7 @@ Challenge:
 // fetch("https://apis.scrimba.com/jsonplaceholder/todos", {
 //   method: "POST",
 //   headers: {
-//     "Content-Type": "application/json",
+//     "Content-Type": "application/json"
 //   },
 //   body: JSON.stringify({
 //     title: "Buy Milk",
