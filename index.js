@@ -50,14 +50,17 @@ Challenge:
 
 */
 
-fetch("https://apis.scrimba.com/jsonplaceholder/todos", {
-  method: "POST",
-  body: JSON.stringify({
-    title: "Buy Milk",
-    completed: false,
-  }),
-})
-  .then((res) => res.json())
-  .then((data) => {
-    console.log(data);
-  });
+// fetch("https://apis.scrimba.com/jsonplaceholder/todos", {
+//   method: "POST",
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+//   body: JSON.stringify({
+//     title: "Buy Milk",
+//     completed: false,
+//   }),
+// })
+//   .then((res) => res.json())
+//   .then((data) => {
+//     console.log(data);
+//   });
