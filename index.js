@@ -32,10 +32,12 @@ document.getElementById("new-post").addEventListener("submit", function (e) {
   })
     .then((res) => res.json())
     .then((post) => {
-      document.getElementById("posts").innerHTML += `
+      document.getElementById("posts").innerHTML = `
       <h3>${post.title}</h3>
       <p>${post.body}</p>
-      <hr/>`;
+      <hr/>
+      ${document.getElementById("posts").innerHTML}
+      `;
     });
 });
 
