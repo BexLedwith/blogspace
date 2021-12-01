@@ -31,10 +31,12 @@ document.getElementById("new-post").addEventListener("submit", function (e) {
     body: JSON.stringify(data),
   })
     .then((res) => res.json())
-    .then((data) => console.log(data));
-  document.getElementById("posts").before = `<h3>${title}</h3>
-  <p>${body}</p>
-  <hr/>`;
+    .then((post) => {
+      document.getElementById("posts").innerHTML += `
+      <h3>${post.title}</h3>
+      <p>${post.body}</p>
+      <hr/>`;
+    });
 });
 
 /**
