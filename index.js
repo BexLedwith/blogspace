@@ -39,6 +39,8 @@ document.getElementById("new-post").addEventListener("submit", function (e) {
     .then((post) => {
       postsArray.unshift(post);
       renderPosts();
+
+      document.getElementById("new-post").reset();
     });
 });
 
